@@ -106,12 +106,12 @@ nav {
     transform: translateY(-2px);
 }
 
-.hero-image {
-    height: 300px;
-    width: 100%;
-    border-radius: 10px;
-    overflow: hidden; /* Keeps image inside rounded corners */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Optional: adds subtle shadow */
+.hero-img {
+    width: 100%;           /* Makes image fill container width */
+    height: auto;          /* Keeps original aspect ratio */
+    max-width: 100%;       /* Prevents overflow */
+    display: block;        /* Removes extra space below image */
+    border-radius: 10px;   /* Matches container's rounded corners */
 }
 
 /* Project Grid */
