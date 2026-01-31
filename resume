@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Nyaem Mostafa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Additional styles for resume page */
+        .resume-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .download-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 60px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .download-section h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        
+        .download-section p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+        
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+        
+        .download-btn {
+            background: white;
+            color: #667eea;
+            padding: 18px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+        
+        .download-btn i {
+            font-size: 24px;
+        }
+        
+        .resume-preview {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 60px;
+        }
+        
+        .resume-preview h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 32px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .quick-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .info-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .info-card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            background: #f0f7ff;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .contact-item i {
+            font-size: 24px;
+            color: #3498db;
+            width: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .download-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .download-btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            
+            .download-section {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">NM</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="resume.html" class="active">Resume</a></li>
+        </ul>
+    </nav>
+
+    <!-- Download Section -->
+    <section class="download-section">
+        <div class="resume-container">
+            <h1>My Professional Documents</h1>
+            <p>Download my resume and engineering portfolio to view my complete qualifications, experience, and project details. These documents are tailored for medical device engineering roles.</p>
+            
+            <div class="download-buttons">
+                <a href="assets/Nyaem_Mostafa_Resume.pdf" class="download-btn" download>
+                    <i class="fas fa-file-pdf"></i>
+                    Download Resume (PDF)
+                </a>
+                <a href="assets/Nyaem_Mostafa_Engineering_Portfolio.pdf" class="download-btn" download>
+                    <i class="fas fa-briefcase"></i>
+                    Download Portfolio (PDF)
+                </a>
+                <a href="https://linkedin.com/in/nyaemmostafa" target="_blank" class="download-btn">
+                    <i class="fab fa-linkedin"></i>
+                    View LinkedIn Profile
+                </a>
+            </div>
+            
+            <p style="margin-top: 30px; font-size: 16px; opacity: 0.8;">
+                <i class="fas fa-info-circle"></i> Files will download directly to your device
+            </p>
+        </div>
+    </section>
+
+    <!-- Resume Preview -->
+    <section class="resume-preview">
+        <div class="resume-container">
+            <h2>Resume Overview</h2>
+            
+            <div class="quick-info">
+                <div class="info-card">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <p><strong>NYU Tandon School of Engineering</strong><br>
+                    B.S. Mechanical Engineering<br>
+                    Minor in Robotics<br>
+                    Expected Graduation: May 2027</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3><i class="fas fa-bullseye"></i> Career Focus</h3>
+                    <p>Medical Device R&D<br>
+                    Surgical Robotics<br>
+                    Minimally Invasive Technologies<br>
+                    Biomedical Engineering</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3><i class="fas fa-tools"></i> Core Skills</h3>
+                    <p>CAD Design (SolidWorks, ANSYS)<br>
+                    Medical Device Prototyping<br>
+                    Soft Robotics & Actuation<br>
+                    Biocompatible Material Design</p>
+                </div>
+            </div>
+            
+            <h3 style="color: #2c3e50; margin: 40px 0 20px;">Professional Experience</h3>
+            
+            <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin-bottom: 20px;">
+                <h4 style="color: #3498db; margin-bottom: 8px;">Research Assistant</h4>
+                <p style="color: #666; margin-bottom: 10px;"><strong>Flexible AI-Enabled Mechatronics Systems Lab</strong> | Dec 2025 - Present</p>
+                <p>Developing flexible biocompatible tubes for robotic endoscope devices targeting FDA clearance for urological applications.</p>
+            </div>
+            
+            <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin-bottom: 20px;">
+                <h4 style="color: #3498db; margin-bottom: 8px;">Research Fellow</h4>
+                <p style="color: #666; margin-bottom: 10px;"><strong>NYU Undergraduate Summer Research Program</strong> | June - Aug 2025</p>
+                <p>Designed lightweight soft hand exoskeleton achieving $0.08/unit production cost and validated lifting capacity through ANSYS CFD analysis.</p>
+            </div>
+            
+            <div style="background: #f8f9fa; padding: 25px; border-radius: 10px;">
+                <h4 style="color: #3498db; margin-bottom: 8px;">Founder & President</h4>
+                <p style="color: #666; margin-bottom: 10px;"><strong>NYU Tandon MedTech Club</strong> | 2024 - Present</p>
+                <p>Organizing events connecting engineering students with medical professionals and device innovators.</p>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong><br>
+                        <a href="mailto:abm9397@nyu.edu">abm9397@nyu.edu</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>Phone</strong><br>
+                        <a href="tel:5168079278">(516) 807-9278</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <div>
+                        <strong>LinkedIn</strong><br>
+                        <a href="https://linkedin.com/in/nyaemmostafa" target="_blank">linkedin.com/in/nyaemmostafa</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <div>
+                        <strong>GitHub</strong><br>
+                        <a href="https://github.com/nyaemmostafa" target="_blank">github.com/nyaemmostafa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section style="text-align: center; padding: 60px 20px;">
+        <h2 style="color: #2c3e50; margin-bottom: 20px;">Ready to Connect?</h2>
+        <p style="font-size: 18px; color: #666; max-width: 700px; margin: 0 auto 30px;">
+            I'm actively seeking medical device internship opportunities for Summer 2025 and would welcome the chance to discuss how my skills can contribute to your team.
+        </p>
+        <a href="mailto:abm9397@nyu.edu?subject=Medical Device Engineering Opportunity" class="btn" style="font-size: 18px; padding: 15px 40px;">
+            <i class="fas fa-paper-plane"></i> Send Me an Email
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2025 Nyaem Mostafa | NYU Tandon School of Engineering</p>
+        <div class="footer-links">
+            <a href="mailto:abm9397@nyu.edu">Email</a>
+            <a href="https://linkedin.com/in/nyaemmostafa">LinkedIn</a>
+            <a href="https://github.com/nyaemmostafa">GitHub</a>
+            <a href="resume.html">Resume</a>
+        </div>
+    </footer>
+</body>
+</html>
