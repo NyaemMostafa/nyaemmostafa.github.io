@@ -108,10 +108,12 @@ nav {
 
 .hero-img {
     width: 100%;           /* Makes image fill container width */
-    height: auto;          /* Keeps original aspect ratio */
-    max-width: 100%;       /* Prevents overflow */
+    height: 100px;         /* CHANGE THIS: Set a fixed height (was 'auto') */
+    object-fit: cover;     /* ADD THIS: Crops image to fill the 250px height */
+    object-position: center; /* ADD THIS: Centers the crop */
     display: block;        /* Removes extra space below image */
     border-radius: 10px;   /* Matches container's rounded corners */
+}
 }
 
 /* Project Grid */
