@@ -108,12 +108,10 @@ nav {
 
 .hero-image {
     height: 300px;
-    background: #ecf0f1;
+    width: 100%;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #7f8c8d;
+    overflow: hidden; /* Keeps image inside rounded corners */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Optional: adds subtle shadow */
 }
 
 /* Project Grid */
