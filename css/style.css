@@ -107,8 +107,8 @@ nav {
 }
 
 .hero-img {
-    width: 50%;           /* Makes image fill container width */
-    height: 200px;         /* CHANGE THIS: Set a fixed height (was 'auto') */
+    width: 75%;           /* Makes image fill container width */
+    height: 250px;         /* CHANGE THIS: Set a fixed height (was 'auto') */
     object-fit: cover;     /* ADD THIS: Crops image to fill the 250px height */
     object-position: center; /* ADD THIS: Centers the crop */
     display: block;        /* Removes extra space below image */
